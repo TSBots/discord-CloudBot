@@ -4,7 +4,7 @@ services:
 
   ircBot:
     build: .
-    image: ${IMAGE_NAME:-tsbots/discord-CloudBot}
+    image: ${IMAGE_NAME:-tsbots/discord-cloudbot}
     container_name: ircBot
     restart: always
     volumes:

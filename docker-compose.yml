@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+
+  ircBot:
+    build: .
+    image: ${IMAGE_NAME:-tsbots/discord-CloudBot}
+    container_name: ircBot
+    restart: always
+    volumes:
+      - ./db_volume:/beakerbot/db_volume
